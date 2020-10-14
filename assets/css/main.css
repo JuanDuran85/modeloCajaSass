@@ -12,43 +12,48 @@ body {
   background-color: springgreen;
   width: 100%;
   height: 600px;
+  margin: auto;
   border: 2px solid black;
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/duran\/Downloads\/g4-vue\/modeloCaja2\/assets\/sass\/layout\/_cajas\.scss}line{font-family:\000038}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/duran\/Downloads\/g4-vue\/modeloCaja2\/assets\/sass\/layout\/_cajas\.scss}line{font-family:\0000310}}
 .div__item1 {
   background-color: saddlebrown;
-  width: 300px;
+  width: 100%;
   height: 200px;
   border: 1px solid black;
   display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  clear: both;
+  position: absolute;
+  left: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/duran\/Downloads\/g4-vue\/modeloCaja2\/assets\/sass\/layout\/_cajas\.scss}line{font-family:\0000317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/duran\/Downloads\/g4-vue\/modeloCaja2\/assets\/sass\/layout\/_cajas\.scss}line{font-family:\0000320}}
 .div__item2 {
   background-color: blue;
-  width: 300px;
+  width: 100%;
+  left: 33.3333333%;
   height: 200px;
   border: 1px solid black;
   display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  clear: both;
+  position: absolute;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/duran\/Downloads\/g4-vue\/modeloCaja2\/assets\/sass\/layout\/_cajas\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/duran\/Downloads\/g4-vue\/modeloCaja2\/assets\/sass\/layout\/_cajas\.scss}line{font-family:\0000330}}
 .div__item3 {
   background-color: red;
+  left: 66.6666%;
   display: inline-block;
-  width: 300px;
+  width: 100%;
   height: 200px;
   border: 1px solid black;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  clear: both;
+  position: absolute;
 }
 
 /*# sourceMappingURL=main.css.map */
