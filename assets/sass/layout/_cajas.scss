@@ -1,3 +1,17 @@
+@mixin grilla ($color-fondo, $margen-iz) {
+    background-color:$color-fondo;
+    left: $margen-iz;
+}
+
+%grillaTodos {
+    display: inline-block;
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    position: absolute;
+}
+
 .div {
     background-color: springgreen;
     width: 100%;
@@ -8,33 +22,15 @@
     box-sizing: border-box;
     position: relative;
     &__item1 {
-        background-color: saddlebrown;
-        width: 100%;
-        height: 200px;
-        border: 1px solid black;
-        display: inline-block;
-        box-sizing: border-box;
-        position: absolute;
-        left: 0;
+        @extend %grillaTodos;
+        @include grilla(saddlebrown,0);
     }
     &__item2 {
-        background-color:blue;
-        width: 100%;
-        left: 33.3333333%;
-        height: 200px;
-        border: 1px solid black;
-        display: inline-block;
-        box-sizing: border-box;
-        position: absolute;
+        @extend %grillaTodos;
+        @include grilla(blue,33.33333333%);
     }
     &__item3 {
-        background-color: red;
-        left: 66.6666%;
-        display: inline-block;
-        width: 100%;
-        height: 200px;
-        border: 1px solid black;
-        box-sizing: border-box;
-        position: absolute;
+        @extend %grillaTodos;
+        @include grilla(red,66.66666666%);
     }
 }
